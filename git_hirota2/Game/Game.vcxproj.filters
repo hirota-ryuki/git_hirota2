@@ -20,9 +20,7 @@
     <ClCompile Include="main.cpp">
       <Filter>Script</Filter>
     </ClCompile>
-    <ClCompile Include="Navimesh.cpp">
-      <Filter>Script\Navimesh</Filter>
-    </ClCompile>
+    <ClCompile Include="Script\Navimesh\Navimesh.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="stdafx.h" />
@@ -30,8 +28,6 @@
       <Filter>system</Filter>
     </ClInclude>
     <ClInclude Include="Game.h" />
-    <ClInclude Include="Script\Navimesh\Navimesh.h">
-      <Filter>Script\Navimesh</Filter>
-    </ClInclude>
+    <ClInclude Include="Script\Navimesh\Navimesh.h" />
   </ItemGroup>
 </Project>
