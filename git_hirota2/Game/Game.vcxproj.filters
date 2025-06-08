@@ -10,6 +10,15 @@
     <Filter Include="Script\Navimesh">
       <UniqueIdentifier>{7475f716-1101-4b99-9f6b-d407a2329ab9}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Script\Transform">
+      <UniqueIdentifier>{42aeefa3-590d-4734-8488-11e4ee61a5ae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Script\FilePath">
+      <UniqueIdentifier>{9b17847b-c3a0-494c-ae68-54f6cf411bbe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Script\Stage">
+      <UniqueIdentifier>{3d335c38-60f2-41df-a1f7-35ef8b6ba450}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp" />
@@ -20,7 +29,9 @@
     <ClCompile Include="main.cpp">
       <Filter>Script</Filter>
     </ClCompile>
-    <ClCompile Include="Script\Navimesh\Navimesh.cpp" />
+    <ClCompile Include="Script\Navimesh\Navmesh.cpp">
+      <Filter>Script\Navimesh</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="stdafx.h" />
@@ -28,6 +39,8 @@
       <Filter>system</Filter>
     </ClInclude>
     <ClInclude Include="Game.h" />
-    <ClInclude Include="Script\Navimesh\Navimesh.h" />
+    <ClInclude Include="Script\Navimesh\Navmesh.h">
+      <Filter>Script\Navimesh</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
