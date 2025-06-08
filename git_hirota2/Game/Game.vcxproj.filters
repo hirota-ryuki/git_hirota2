@@ -32,6 +32,13 @@
     <ClCompile Include="Script\Navimesh\Navmesh.cpp">
       <Filter>Script\Navimesh</Filter>
     </ClCompile>
+    <ClCompile Include="Script\FilePath\FilePathManager.cpp">
+      <Filter>Script\FilePath</Filter>
+    </ClCompile>
+    <ClCompile Include="Stage.cpp">
+      <Filter>Script\Stage</Filter>
+    </ClCompile>
+    <ClCompile Include="Script\Transform\Transform.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="stdafx.h" />
@@ -42,5 +49,12 @@
     <ClInclude Include="Script\Navimesh\Navmesh.h">
       <Filter>Script\Navimesh</Filter>
     </ClInclude>
+    <ClInclude Include="Script\FilePath\FilePathManager.h">
+      <Filter>Script\FilePath</Filter>
+    </ClInclude>
+    <ClInclude Include="Stage.h">
+      <Filter>Script\Stage</Filter>
+    </ClInclude>
+    <ClInclude Include="Script\Transform\Transform.h" />
   </ItemGroup>
 </Project>
