@@ -4,14 +4,25 @@
     <Filter Include="system">
       <UniqueIdentifier>{22dd8095-74f9-46df-81a1-36675a040b1f}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Script">
+      <UniqueIdentifier>{847fa967-3069-4c90-a164-945c0c001224}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Script\Navimesh">
+      <UniqueIdentifier>{7475f716-1101-4b99-9f6b-d407a2329ab9}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp" />
-    <ClCompile Include="main.cpp" />
     <ClCompile Include="system\system.cpp">
       <Filter>system</Filter>
     </ClCompile>
     <ClCompile Include="Game.cpp" />
+    <ClCompile Include="main.cpp">
+      <Filter>Script</Filter>
+    </ClCompile>
+    <ClCompile Include="Navimesh.cpp">
+      <Filter>Script\Navimesh</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="stdafx.h" />
@@ -19,5 +30,8 @@
       <Filter>system</Filter>
     </ClInclude>
     <ClInclude Include="Game.h" />
+    <ClInclude Include="Script\Navimesh\Navimesh.h">
+      <Filter>Script\Navimesh</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
