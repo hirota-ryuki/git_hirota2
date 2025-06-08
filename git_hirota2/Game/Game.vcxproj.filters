@@ -35,10 +35,12 @@
     <ClCompile Include="Script\FilePath\FilePathManager.cpp">
       <Filter>Script\FilePath</Filter>
     </ClCompile>
-    <ClCompile Include="Stage.cpp">
+    <ClCompile Include="Script\Stage\Stage.cpp">
       <Filter>Script\Stage</Filter>
     </ClCompile>
-    <ClCompile Include="Script\Transform\Transform.cpp" />
+    <ClCompile Include="Script\Transform\Transform.cpp">
+      <Filter>Script\Transform</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="stdafx.h" />
@@ -52,9 +54,11 @@
     <ClInclude Include="Script\FilePath\FilePathManager.h">
       <Filter>Script\FilePath</Filter>
     </ClInclude>
-    <ClInclude Include="Stage.h">
+    <ClInclude Include="Script\Stage\Stage.h">
       <Filter>Script\Stage</Filter>
     </ClInclude>
-    <ClInclude Include="Script\Transform\Transform.h" />
+    <ClInclude Include="Script\Transform\Transform.h">
+      <Filter>Script\Transform</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
