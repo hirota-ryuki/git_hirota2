@@ -16,8 +16,17 @@
     <Filter Include="Script\FilePath">
       <UniqueIdentifier>{9b17847b-c3a0-494c-ae68-54f6cf411bbe}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Script\Stage">
+    <Filter Include="Script\Actor">
+      <UniqueIdentifier>{96ebeab7-62d4-49fc-92e5-abaccf7cedd7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Script\Actor\Stage">
       <UniqueIdentifier>{3d335c38-60f2-41df-a1f7-35ef8b6ba450}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Script\Actor\Character">
+      <UniqueIdentifier>{58c3f12a-bedc-40a0-a14b-e46f6d3022b2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Script\Actor\Character\Player">
+      <UniqueIdentifier>{83f80dfc-a4b9-4ff8-8d77-340a36f6b815}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -36,10 +45,19 @@
       <Filter>Script\FilePath</Filter>
     </ClCompile>
     <ClCompile Include="Script\Stage\Stage.cpp">
-      <Filter>Script\Stage</Filter>
+      <Filter>Script\Actor\Stage</Filter>
     </ClCompile>
     <ClCompile Include="Script\Transform\Transform.cpp">
       <Filter>Script\Transform</Filter>
+    </ClCompile>
+    <ClCompile Include="Script\Actor\Actor.cpp">
+      <Filter>Script\Actor</Filter>
+    </ClCompile>
+    <ClCompile Include="Script\Actor\Character\Character.cpp">
+      <Filter>Script\Actor\Character</Filter>
+    </ClCompile>
+    <ClCompile Include="Script\Actor\Character\Player\Player.cpp">
+      <Filter>Script\Actor\Character\Player</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -55,10 +73,19 @@
       <Filter>Script\FilePath</Filter>
     </ClInclude>
     <ClInclude Include="Script\Stage\Stage.h">
-      <Filter>Script\Stage</Filter>
+      <Filter>Script\Actor\Stage</Filter>
     </ClInclude>
     <ClInclude Include="Script\Transform\Transform.h">
       <Filter>Script\Transform</Filter>
+    </ClInclude>
+    <ClInclude Include="Script\Actor\Actor.h">
+      <Filter>Script\Actor</Filter>
+    </ClInclude>
+    <ClInclude Include="Script\Actor\Character\Character.h">
+      <Filter>Script\Actor\Character</Filter>
+    </ClInclude>
+    <ClInclude Include="Script\Actor\Character\Player\Player.h">
+      <Filter>Script\Actor\Character\Player</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

@@ -226,6 +226,9 @@
   <ItemGroup>
     <ClCompile Include="Game.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="Script\Actor\Actor.cpp" />
+    <ClCompile Include="Script\Actor\Character\Character.cpp" />
+    <ClCompile Include="Script\Actor\Character\Player\Player.cpp" />
     <ClCompile Include="Script\FilePath\FilePathManager.cpp" />
     <ClCompile Include="Script\Navimesh\Navmesh.cpp" />
     <ClCompile Include="Script\Stage\Stage.cpp" />
@@ -239,6 +242,9 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Game.h" />
+    <ClInclude Include="Script\Actor\Actor.h" />
+    <ClInclude Include="Script\Actor\Character\Character.h" />
+    <ClInclude Include="Script\Actor\Character\Player\Player.h" />
     <ClInclude Include="Script\FilePath\FilePathManager.h" />
     <ClInclude Include="Script\Navimesh\Navmesh.h" />
     <ClInclude Include="Script\Stage\Stage.h" />
