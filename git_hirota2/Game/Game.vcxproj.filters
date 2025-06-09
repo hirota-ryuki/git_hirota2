@@ -4,29 +4,29 @@
     <Filter Include="system">
       <UniqueIdentifier>{22dd8095-74f9-46df-81a1-36675a040b1f}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Script">
+    <Filter Include="Source">
       <UniqueIdentifier>{847fa967-3069-4c90-a164-945c0c001224}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Script\Navimesh">
+    <Filter Include="Source\Navimesh">
       <UniqueIdentifier>{7475f716-1101-4b99-9f6b-d407a2329ab9}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Script\Transform">
+    <Filter Include="Source\Transform">
       <UniqueIdentifier>{42aeefa3-590d-4734-8488-11e4ee61a5ae}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Script\FilePath">
-      <UniqueIdentifier>{9b17847b-c3a0-494c-ae68-54f6cf411bbe}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Script\Actor">
+    <Filter Include="Source\Actor">
       <UniqueIdentifier>{96ebeab7-62d4-49fc-92e5-abaccf7cedd7}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Script\Actor\Stage">
+    <Filter Include="Source\Actor\Stage">
       <UniqueIdentifier>{3d335c38-60f2-41df-a1f7-35ef8b6ba450}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Script\Actor\Character">
+    <Filter Include="Source\Actor\Character">
       <UniqueIdentifier>{58c3f12a-bedc-40a0-a14b-e46f6d3022b2}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Script\Actor\Character\Player">
+    <Filter Include="Source\Actor\Character\Player">
       <UniqueIdentifier>{83f80dfc-a4b9-4ff8-8d77-340a36f6b815}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Resource">
+      <UniqueIdentifier>{9b17847b-c3a0-494c-ae68-54f6cf411bbe}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -36,28 +36,28 @@
     </ClCompile>
     <ClCompile Include="Game.cpp" />
     <ClCompile Include="main.cpp">
-      <Filter>Script</Filter>
+      <Filter>Source</Filter>
     </ClCompile>
-    <ClCompile Include="Script\Navimesh\Navmesh.cpp">
-      <Filter>Script\Navimesh</Filter>
+    <ClCompile Include="Source\Actor\Actor.cpp">
+      <Filter>Source\Actor</Filter>
     </ClCompile>
-    <ClCompile Include="Script\FilePath\FilePathManager.cpp">
-      <Filter>Script\FilePath</Filter>
+    <ClCompile Include="Source\Actor\Character\Player\Player.cpp">
+      <Filter>Source\Actor\Character\Player</Filter>
     </ClCompile>
-    <ClCompile Include="Script\Stage\Stage.cpp">
-      <Filter>Script\Actor\Stage</Filter>
+    <ClCompile Include="Source\Actor\Character\Character.cpp">
+      <Filter>Source\Actor\Character</Filter>
     </ClCompile>
-    <ClCompile Include="Script\Transform\Transform.cpp">
-      <Filter>Script\Transform</Filter>
+    <ClCompile Include="Source\Actor\Stage\Stage.cpp">
+      <Filter>Source\Actor\Stage</Filter>
     </ClCompile>
-    <ClCompile Include="Script\Actor\Actor.cpp">
-      <Filter>Script\Actor</Filter>
+    <ClCompile Include="Source\Navimesh\Navmesh.cpp">
+      <Filter>Source\Navimesh</Filter>
     </ClCompile>
-    <ClCompile Include="Script\Actor\Character\Character.cpp">
-      <Filter>Script\Actor\Character</Filter>
+    <ClCompile Include="Source\Transform\Transform.cpp">
+      <Filter>Source\Transform</Filter>
     </ClCompile>
-    <ClCompile Include="Script\Actor\Character\Player\Player.cpp">
-      <Filter>Script\Actor\Character\Player</Filter>
+    <ClCompile Include="Source\Resource\ResourceManager.cpp">
+      <Filter>Source\Resource</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -66,26 +66,23 @@
       <Filter>system</Filter>
     </ClInclude>
     <ClInclude Include="Game.h" />
-    <ClInclude Include="Script\Navimesh\Navmesh.h">
-      <Filter>Script\Navimesh</Filter>
+    <ClInclude Include="Source\Actor\Actor.h">
+      <Filter>Source\Actor</Filter>
     </ClInclude>
-    <ClInclude Include="Script\FilePath\FilePathManager.h">
-      <Filter>Script\FilePath</Filter>
+    <ClInclude Include="Source\Actor\Character\Player\Player.h">
+      <Filter>Source\Actor\Character\Player</Filter>
     </ClInclude>
-    <ClInclude Include="Script\Stage\Stage.h">
-      <Filter>Script\Actor\Stage</Filter>
+    <ClInclude Include="Source\Actor\Character\Character.h">
+      <Filter>Source\Actor\Character</Filter>
     </ClInclude>
-    <ClInclude Include="Script\Transform\Transform.h">
-      <Filter>Script\Transform</Filter>
+    <ClInclude Include="Source\Actor\Stage\Stage.h">
+      <Filter>Source\Actor\Stage</Filter>
     </ClInclude>
-    <ClInclude Include="Script\Actor\Actor.h">
-      <Filter>Script\Actor</Filter>
+    <ClInclude Include="Source\Transform\Transform.h">
+      <Filter>Source\Transform</Filter>
     </ClInclude>
-    <ClInclude Include="Script\Actor\Character\Character.h">
-      <Filter>Script\Actor\Character</Filter>
-    </ClInclude>
-    <ClInclude Include="Script\Actor\Character\Player\Player.h">
-      <Filter>Script\Actor\Character\Player</Filter>
+    <ClInclude Include="Source\Resource\ResourceManager.h">
+      <Filter>Source\Resource</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
