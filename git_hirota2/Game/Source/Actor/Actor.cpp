@@ -1,5 +1,7 @@
 ﻿#include "stdafx.h"
 #include "Actor.h"
+#include "Source/Transform/Transform.h"
+#include <memory>
 
 //ヘッダで宣言した変数は、ヘッダで初期化するのではなく、コンストラクタで初期化すること。
 //ローカル環境の話になるが、コンパイル時間を減らすためである。
@@ -8,10 +10,12 @@
 //コンパイル時間がその分長くなってしまう。
 Actor::Actor()
 {
+    m_transform = std::make_shared<Transform>();
 }
 
 Actor::~Actor()
 {
+    m_transform.reset();
 }
 
 bool Actor::Start()
