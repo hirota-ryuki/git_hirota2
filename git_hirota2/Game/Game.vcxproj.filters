@@ -22,14 +22,14 @@
     <Filter Include="Source\Actor\Character">
       <UniqueIdentifier>{58c3f12a-bedc-40a0-a14b-e46f6d3022b2}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source\Actor\Character\Player">
-      <UniqueIdentifier>{83f80dfc-a4b9-4ff8-8d77-340a36f6b815}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Source\Resource">
       <UniqueIdentifier>{9b17847b-c3a0-494c-ae68-54f6cf411bbe}</UniqueIdentifier>
     </Filter>
     <Filter Include="Engine">
       <UniqueIdentifier>{f10a3105-d4cd-4475-bf02-8e11235ac441}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Actor\Character\BattleCharacter">
+      <UniqueIdentifier>{83f80dfc-a4b9-4ff8-8d77-340a36f6b815}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -41,7 +41,7 @@
       <Filter>Source\Actor</Filter>
     </ClCompile>
     <ClCompile Include="Source\Actor\Character\Player\Player.cpp">
-      <Filter>Source\Actor\Character\Player</Filter>
+      <Filter>Source\Actor\Character\BattleCharacter</Filter>
     </ClCompile>
     <ClCompile Include="Source\Actor\Character\Character.cpp">
       <Filter>Source\Actor\Character</Filter>
@@ -59,7 +59,9 @@
       <Filter>Source\Resource</Filter>
     </ClCompile>
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="Source\Actor\Character\BattleCharacter\BattleCharacter.cpp" />
+    <ClCompile Include="Source\Actor\Character\BattleCharacter\BattleCharacter.cpp">
+      <Filter>Source\Actor\Character\BattleCharacter</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="stdafx.h" />
@@ -70,7 +72,7 @@
       <Filter>Source\Actor</Filter>
     </ClInclude>
     <ClInclude Include="Source\Actor\Character\Player\Player.h">
-      <Filter>Source\Actor\Character\Player</Filter>
+      <Filter>Source\Actor\Character\BattleCharacter</Filter>
     </ClInclude>
     <ClInclude Include="Source\Actor\Character\Character.h">
       <Filter>Source\Actor\Character</Filter>
@@ -87,6 +89,8 @@
     <ClInclude Include="Source\Navimesh\Navmesh.h">
       <Filter>Source\Navimesh</Filter>
     </ClInclude>
-    <ClInclude Include="Source\Actor\Character\BattleCharacter\BattleCharacter.h" />
+    <ClInclude Include="Source\Actor\Character\BattleCharacter\BattleCharacter.h">
+      <Filter>Source\Actor\Character\BattleCharacter</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
