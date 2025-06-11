@@ -1,6 +1,5 @@
 ﻿#include "stdafx.h"
 #include "Character.h"
-#include "Actor/Actor.h"
 
 namespace nsGame {
     Character::Character()
