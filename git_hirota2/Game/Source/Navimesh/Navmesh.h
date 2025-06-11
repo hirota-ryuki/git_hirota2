@@ -1,78 +1,79 @@
-﻿#pragma once
+#pragma once
 
-struct CellBinary {
+namespace nsGame {
+    struct CellBinary {
 
-    Vector3	vertexPos[3];	// セルの頂点のポジション。
-    int		linkCellNo[3];	// セルに隣接しているセル番号。
-    Vector3	centerPos;		// セルの中心座標のポジション。
-};
-
-// セルクラス。
-struct Cell {
-    enum State {
-        State_NotResearch,
-        State_Opened,
-        State_Closed,
+        Vector3	vertexPos[3];	// セルの頂点のポジション。
+        int		linkCellNo[3];	// セルに隣接しているセル番号。
+        Vector3	centerPos;		// セルの中心座標のポジション。
     };
 
-    Vector3	vertexPos[3]; 
+    // セルクラス。
+    struct Cell {
+        enum State {
+            State_NotResearch,
+            State_Opened,
+            State_Closed,
+        };
 
-    Cell* linkCells[3];	    // セルに隣接しているセル。
-    Vector3	centerPos;		// セルの中心座標のポジション。
-    int	    linkMax = 0;	// 隣接しているセルの数。
-    float	costFromStart;
-    float	costToGoal;
-    Cell* parentCell;
-    State	state = State_NotResearch;
-};
+        Vector3	vertexPos[3];
 
-class Navmesh : public IGameObject
-{
-public:
-    Navmesh();
-    ~Navmesh();
+        Cell* linkCells[3];	    // セルに隣接しているセル。
+        Vector3	centerPos;		// セルの中心座標のポジション。
+        int	    linkMax = 0;	// 隣接しているセルの数。
+        float	costFromStart;
+        float	costToGoal;
+        Cell* parentCell;
+        State	state = State_NotResearch;
+    };
 
-    bool Start() override { return true; }
-    void Update() override;
-    void Render(RenderContext& rc) override;
+    class Navmesh : public IGameObject
+    {
+    public:
+        Navmesh();
+        ~Navmesh();
 
-    /// <summary>
-    /// ナビメッシュを初期化する。
-    /// </summary>
-    void Init();
+        bool Start() override { return true; }
+        void Update() override;
+        void Render(RenderContext& rc) override;
 
-    /// <summary>
-    /// モデルからナビメッシュを作成する。
-    /// </summary>
-    /// <param name="model">ナビメッシュ作成元のモデル。</param>
-    void Create(ModelRender& model);
+        /// <summary>
+        /// ナビメッシュを初期化する。
+        /// </summary>
+        void Init();
 
-    /// <summary>
-    /// モデルから頂点バッファとインデックスバッファを作成する。
-    /// </summary>
-    /// <param name="model">バッファ作成元のモデル。</param>
-    void BuildVertexBufferAndIndexBufferFrom(ModelRender& model);
+        /// <summary>
+        /// モデルからナビメッシュを作成する。
+        /// </summary>
+        /// <param name="model">ナビメッシュ作成元のモデル。</param>
+        void Create(ModelRender& model);
 
-    /// <summary>
-    /// モデルから頂点情報を構築する。
-    /// </summary>
-    /// <param name="model">頂点情報作成元のモデル。</param>
-    void BuildVertex(Model& model);
+        /// <summary>
+        /// モデルから頂点バッファとインデックスバッファを作成する。
+        /// </summary>
+        /// <param name="model">バッファ作成元のモデル。</param>
+        void BuildVertexBufferAndIndexBufferFrom(ModelRender& model);
 
-    /// <summary>
-    /// モデルからインデックス情報を構築する。
-    /// </summary>
-    /// <param name="model">インデックス情報作成元のモデル。</param>
-    void BuildIndex(Model& model);
+        /// <summary>
+        /// モデルから頂点情報を構築する。
+        /// </summary>
+        /// <param name="model">頂点情報作成元のモデル。</param>
+        void BuildVertex(Model& model);
 
-private:
-    typedef std::vector<Vector3>					VertexBuffer;	// 頂点バッファ。
-    typedef std::vector<unsigned int>				IndexBuffer;	// インデックスバッファ。
+        /// <summary>
+        /// モデルからインデックス情報を構築する。
+        /// </summary>
+        /// <param name="model">インデックス情報作成元のモデル。</param>
+        void BuildIndex(Model& model);
 
-    typedef std::unique_ptr<VertexBuffer>			VertexBufferPtr;
-    typedef std::unique_ptr<IndexBuffer>			IndexBufferPtr;
+    private:
+        using NavVertexBuffer = std::vector<Vector3>;	// 頂点バッファ。
+        using NavIndexBuffer = std::vector<unsigned int>;	// インデックスバッファ。
 
-    std::vector<VertexBufferPtr>	m_vertexBufferArray; // 頂点バッファ。
-    std::vector<IndexBufferPtr>		m_indexBufferArray;	 // インデックスバッファ。
-};
+        using NavVertexBufferPtr = std::unique_ptr<NavVertexBuffer>;
+        using NavIndexBufferPtr = std::unique_ptr<NavIndexBuffer>;
 
+        std::vector<NavVertexBufferPtr>	m_vertexBufferArray; // 頂点バッファ。
+        std::vector<NavIndexBufferPtr>		m_indexBufferArray;	 // インデックスバッファ。
+    };
+}
