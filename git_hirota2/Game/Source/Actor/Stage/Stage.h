@@ -1,17 +1,17 @@
 ﻿#pragma once
+#include "Actor/Actor.h"
+namespace nsGame {
+    class Stage :
+        public Actor
 
-class Transform;
+    {
+    public:
+        Stage();
+        ~Stage();
+        bool Start() override;
+        void Update() override;
+        void Render(RenderContext& rc) override;
 
-class Stage :
-    public IGameObject
-{
-public:
-    Stage();
-    ~Stage();
-    bool Start() override;
-    void Update() override;
-    void Render(RenderContext& rc) override;
-
-private:
-};
-
+    private:
+    };
+}

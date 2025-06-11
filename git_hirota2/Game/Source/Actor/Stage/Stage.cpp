@@ -1,24 +1,24 @@
 ﻿#include "stdafx.h"
 #include "Stage.h"
-#include "Transform/Transform.h"
+namespace nsGame {
+    Stage::Stage()
+    {
+    }
 
-Stage::Stage()
-{
-}
+    Stage::~Stage()
+    {
+    }
 
-Stage::~Stage()
-{
-}
+    bool Stage::Start()
+    {
+        return true;
+    }
 
-bool Stage::Start()
-{
-    return true;
-}
+    void Stage::Update()
+    {
+    }
 
-void Stage::Update()
-{
-}
-
-void Stage::Render(RenderContext& rc)
-{
+    void Stage::Render(RenderContext& rc)
+    {
+    }
 }
