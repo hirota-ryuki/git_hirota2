@@ -8,7 +8,6 @@ Stage::Stage()
 
 Stage::~Stage()
 {
-    m_transform.reset();
 }
 
 bool Stage::Start()
