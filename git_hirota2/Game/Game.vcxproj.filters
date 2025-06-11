@@ -28,15 +28,14 @@
     <Filter Include="Source\Resource">
       <UniqueIdentifier>{9b17847b-c3a0-494c-ae68-54f6cf411bbe}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Engine">
+      <UniqueIdentifier>{f10a3105-d4cd-4475-bf02-8e11235ac441}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp" />
     <ClCompile Include="system\system.cpp">
       <Filter>system</Filter>
-    </ClCompile>
-    <ClCompile Include="Game.cpp" />
-    <ClCompile Include="main.cpp">
-      <Filter>Source</Filter>
     </ClCompile>
     <ClCompile Include="Source\Actor\Actor.cpp">
       <Filter>Source\Actor</Filter>
@@ -59,13 +58,14 @@
     <ClCompile Include="Source\Resource\ResourceManager.cpp">
       <Filter>Source\Resource</Filter>
     </ClCompile>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="Source\Actor\Character\BattleCharacter\BattleCharacter.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="system\system.h">
       <Filter>system</Filter>
     </ClInclude>
-    <ClInclude Include="Game.h" />
     <ClInclude Include="Source\Actor\Actor.h">
       <Filter>Source\Actor</Filter>
     </ClInclude>
@@ -84,5 +84,9 @@
     <ClInclude Include="Source\Resource\ResourceManager.h">
       <Filter>Source\Resource</Filter>
     </ClInclude>
+    <ClInclude Include="Source\Navimesh\Navmesh.h">
+      <Filter>Source\Navimesh</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Actor\Character\BattleCharacter\BattleCharacter.h" />
   </ItemGroup>
 </Project>
