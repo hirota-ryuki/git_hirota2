@@ -4,7 +4,6 @@
 #include<InitGUID.h>
 #include<dxgidebug.h>
 
-
 void ReportLiveObjects()
 {
 	IDXGIDebug* pDxgiDebug;
@@ -30,6 +29,8 @@ int WINAPI wWinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPWSTR lpCmdLi
 	// ここから初期化を行うコードを記述する。
 	//////////////////////////////////////
 
+    //リソースマネージャーの作成。
+    nsGame::ResourceManager::CreateInstance();
 	
 
 	//////////////////////////////////////
