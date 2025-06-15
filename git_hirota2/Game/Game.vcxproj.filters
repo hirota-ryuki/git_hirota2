@@ -40,9 +40,6 @@
     <ClCompile Include="Source\Actor\Actor.cpp">
       <Filter>Source\Actor</Filter>
     </ClCompile>
-    <ClCompile Include="Source\Actor\Character\Player\Player.cpp">
-      <Filter>Source\Actor\Character\BattleCharacter</Filter>
-    </ClCompile>
     <ClCompile Include="Source\Actor\Character\Character.cpp">
       <Filter>Source\Actor\Character</Filter>
     </ClCompile>
@@ -70,9 +67,6 @@
     </ClInclude>
     <ClInclude Include="Source\Actor\Actor.h">
       <Filter>Source\Actor</Filter>
-    </ClInclude>
-    <ClInclude Include="Source\Actor\Character\Player\Player.h">
-      <Filter>Source\Actor\Character\BattleCharacter</Filter>
     </ClInclude>
     <ClInclude Include="Source\Actor\Character\Character.h">
       <Filter>Source\Actor\Character</Filter>
