@@ -231,8 +231,10 @@
     <ClCompile Include="Source\Actor\Character\BattleCharacter\BattleCharacter.cpp" />
     <ClCompile Include="Source\Actor\Character\Character.cpp" />
     <ClCompile Include="Source\Actor\Stage\Stage.cpp" />
+    <ClCompile Include="Source\Engine\Noncopyable\Noncopyable.cpp" />
     <ClCompile Include="Source\Navimesh\Navmesh.cpp" />
     <ClCompile Include="Source\Resource\ResourceManager.cpp" />
+    <ClCompile Include="Source\Resource\TResourceBank.cpp" />
     <ClCompile Include="Source\Transform\Transform.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
@@ -246,8 +248,10 @@
     <ClInclude Include="Source\Actor\Character\BattleCharacter\BattleCharacter.h" />
     <ClInclude Include="Source\Actor\Character\Character.h" />
     <ClInclude Include="Source\Actor\Stage\Stage.h" />
+    <ClInclude Include="Source\Engine\Noncopyable\Noncopyable.h" />
     <ClInclude Include="Source\Navimesh\Navmesh.h" />
     <ClInclude Include="Source\Resource\ResourceManager.h" />
+    <ClInclude Include="Source\Resource\TResourceBank.h" />
     <ClInclude Include="Source\Transform\Transform.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="system\system.h" />

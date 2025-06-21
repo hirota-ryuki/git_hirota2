@@ -59,6 +59,10 @@
     <ClCompile Include="Source\Actor\Character\BattleCharacter\BattleCharacter.cpp">
       <Filter>Source\Actor\Character\BattleCharacter</Filter>
     </ClCompile>
+    <ClCompile Include="Source\Resource\TResourceBank.cpp">
+      <Filter>Source\Resource</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Engine\Noncopyable\Noncopyable.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="stdafx.h" />
@@ -86,5 +90,9 @@
     <ClInclude Include="Source\Actor\Character\BattleCharacter\BattleCharacter.h">
       <Filter>Source\Actor\Character\BattleCharacter</Filter>
     </ClInclude>
+    <ClInclude Include="Source\Resource\TResourceBank.h">
+      <Filter>Source\Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Engine\Noncopyable\Noncopyable.h" />
   </ItemGroup>
 </Project>
