@@ -1,7 +1,18 @@
 ﻿#include "stdafx.h"
 #include "ResourceManager.h"
 
-namespace nsGame {
-    // シングルトンインスタンスの初期化。
+
+namespace nsApp {
+    /** シングルトンインスタンスの初期化。 */
     ResourceManager* ResourceManager::m_instance = nullptr;
+
+
+    ResourceManager::ResourceManager()
+    {
+    }
+
+
+    ResourceManager::~ResourceManager()
+    {
+    }
 }
