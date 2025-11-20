@@ -1,17 +1,26 @@
-﻿#pragma once
-#include "Actor/Actor.h"
-namespace nsGame {
-    class Stage :
-        public Actor
+﻿/**
+ * ステージクラス
+ */
+#pragma once
+#include "Source/Actor/Actor.h"
 
-    {
-    public:
-        Stage();
-        ~Stage();
-        bool Start() override;
-        void Update() override;
-        void Render(RenderContext& rc) override;
 
-    private:
-    };
+namespace nsApp {
+    namespace nsActor {
+        /**
+         * ステージクラス
+         */
+        class Stage : public Actor
+        {
+        public:
+            Stage();
+            ~Stage();
+
+
+        public:
+            bool Start() override;
+            void Update() override;
+            void Render(RenderContext& rc) override;
+        };
+    }
 }
