@@ -1,26 +1,29 @@
 ﻿#include "stdafx.h"
 #include "BattleCharacter.h"
 
-namespace nsGame {
-    BattleCharacter::BattleCharacter()
-    {
 
-    }
+namespace nsApp {
+    namespace nsActor {
+        BattleCharacter::BattleCharacter()
+        {
 
-    BattleCharacter::~BattleCharacter()
-    {
-    }
+        }
 
-    bool BattleCharacter::Start()
-    {
-        return true;
-    }
+        BattleCharacter::~BattleCharacter()
+        {
+        }
 
-    void BattleCharacter::Update()
-    {
-    }
+        bool BattleCharacter::Start()
+        {
+            return true;
+        }
 
-    void BattleCharacter::Render(RenderContext& rc)
-    {
+        void BattleCharacter::Update()
+        {
+        }
+
+        void BattleCharacter::Render(RenderContext& rc)
+        {
+        }
     }
 }

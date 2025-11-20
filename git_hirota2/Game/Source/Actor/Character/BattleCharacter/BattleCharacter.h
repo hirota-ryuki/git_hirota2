@@ -1,13 +1,26 @@
-﻿#pragma once
+﻿/**
+ * バトルキャラクタークラス 
+ */
+#pragma once
 #include "Actor/Character/Character.h"
-namespace nsGame {
-    class BattleCharacter :
-        public Character
-    {
-        BattleCharacter();
-        ~BattleCharacter();
-        bool Start() override;
-        void Update() override;
-        void Render(RenderContext& rc) override;
-    };
+
+
+namespace nsApp {
+    namespace nsActor {
+        /**
+         *　バトルキャラクタークラス
+         */
+        class BattleCharacter : public Character
+        {
+        public:
+            BattleCharacter();
+            ~BattleCharacter();
+
+
+        public:
+            bool Start() override;
+            void Update() override;
+            void Render(RenderContext& rc) override;
+        };
+    }
 }
