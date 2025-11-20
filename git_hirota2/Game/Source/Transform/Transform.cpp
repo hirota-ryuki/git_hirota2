@@ -24,6 +24,16 @@ namespace nsApp {
 
     void Transform::UpdateTransform()
     {
+        if (m_parent)
+        {
+
+        }
+        /** 親がいないのでそのままコピー */
+        else {            
+            m_position = m_localPosition;
+            m_rotation = m_localRotation;
+            m_scale = m_localScale;
+        }
     }
 
 
